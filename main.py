@@ -15,3 +15,4 @@ if __name__ == "__main__":
 
     model = YOLO('yolov8x-seg.pt')
     image = cv2.imread(source)
+    h, w, _ = image.shape
