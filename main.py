@@ -16,3 +16,4 @@ if __name__ == "__main__":
     model = YOLO('yolov8x-seg.pt')
     image = cv2.imread(source)
     h, w, _ = image.shape
+    results = model(source=image.copy(), classes=0, retina_masks=True, conf=0.2, verbose=False)
