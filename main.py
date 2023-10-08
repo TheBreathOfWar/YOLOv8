@@ -1,5 +1,6 @@
 import argparse
 from ultralytics import YOLO
+import cv2
 
 if __name__ == "__main__":
     pass
@@ -13,3 +14,4 @@ if __name__ == "__main__":
     selection_type = int(args.selection_type)
 
     model = YOLO('yolov8x-seg.pt')
+    image = cv2.imread(source)
