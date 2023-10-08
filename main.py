@@ -1,4 +1,5 @@
 import argparse
+from ultralytics import YOLO
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -10,3 +11,5 @@ if __name__ == "__main__":
     source = args.image
     selection_type = int(args.selection_type)
     color = args.selection_color
+
+    model = YOLO('yolov8x-seg.pt')
