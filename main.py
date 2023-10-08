@@ -9,3 +9,4 @@ if __name__ == "__main__":
 
     source = args.image
     selection_type = int(args.selection_type)
+    color = args.selection_color
