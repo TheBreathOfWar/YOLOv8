@@ -1,4 +1,5 @@
 import argparse
+from ultralytics import YOLO
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -8,3 +9,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     source = args.image
+
+    model = YOLO('yolov8x-seg.pt')
