@@ -2,6 +2,7 @@ import argparse
 from ultralytics import YOLO
 from PIL import ImageColor
 from utils import *
+from PIL import Image
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -44,3 +45,6 @@ if __name__ == "__main__":
             else:
 
                 print('Error: incorrect selection_type, expected 1 or 0')
+
+    image = Image.fromarray(image[..., ::-1])
+    image.save('output.jpg')
