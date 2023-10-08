@@ -37,3 +37,4 @@ if __name__ == "__main__":
 
     image = Image.fromarray(image[..., ::-1])
     image.save('output.jpg')
+    print('Result saved to output.jpg')
