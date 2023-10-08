@@ -36,3 +36,4 @@ if __name__ == "__main__":
                 print('Error: incorrect selection_type, expected 1 or 0')
 
     image = Image.fromarray(image[..., ::-1])
+    image.save('output.jpg')
