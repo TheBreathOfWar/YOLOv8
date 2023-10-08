@@ -1,11 +1,16 @@
 # YOLOv8
 ## test task
 
-## Stage I: install requirements
+## Stage I: clone
 
-### ```pip install -r requirements.txt```
+### ```$ git clone https://github.com/TheBreathOfWar/YOLOv8 -b dev```
 
-## Stage II: run
+## Stage II: install requirements
+
+### ```$ cd YOLOv8```
+### ```$ pip install -r requirements.txt```
+
+## Stage III: run
 
 ### ```--image``` - path to input image
 ### ```--selection_type``` - 1 for boxes or 0 for masks
@@ -13,7 +18,7 @@
 
 ## Example:
 
-### ``` python main.py --image input.jpg --selection_color 8B00FF --selection_type 0```
+### ```$ python main.py --image input.jpg --selection_color 8B00FF --selection_type 0```
 
 <image src="input.jpg" alt="Before">
 <image src="output.jpg" alt="After">
