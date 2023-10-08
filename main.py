@@ -9,3 +9,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     source = args.image
+    selection_type = int(args.selection_type)
